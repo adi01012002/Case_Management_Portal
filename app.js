@@ -19,10 +19,7 @@ const db =process.env.MONGO_URI;
 // HMGzdKMTcP47awdI
 //db connection
 mongoose
-  .connect(db, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(db)
   .then(
     () => console.log("MongoDB Atlas connected...")
     //() => console.log('MongoDB Local connected...')
